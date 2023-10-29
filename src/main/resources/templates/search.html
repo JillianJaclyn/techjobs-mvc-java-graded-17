@@ -37,6 +37,10 @@
   <hr />
 
   <!-- TODO #4 - Loop over the search results to display all job fields. -->
+    <div th:if="${jobs}">
+        <h2>Search Results</h2>
+        <div th:replace="~{fragments :: searchDisplay}"></div>
+    </div>
 
 </div>
 
